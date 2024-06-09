@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/IngresosEgresos.css">
+    <title>Ingresos y Egresos</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="/HTML/Inicio.html"><img class="img" src="../RECURSOS/logo.png" alt="Logo" class="logo"></a>
+            <p class="text-encabezado">
+                <b>Con tu dinero en orden y nuestro sistema<br>en mano,
+                juntos trazaremos un camino<br>financiero sano</b>
+            </p>
+        </header>
+        <h1 class="title">Gestión de Tipos de ingresos y <br> egresos</h1>
+        <main class="main-content">
+            <div class="form-wrapper">
+                <div class="form-container">
+                    <div class="form-left">
+                        <form id="entryForm">
+                            <div class="form-group">
+                                <label for="codigo">Código:</label>
+                                <input type="text" id="codigo">
+                            </div>
+                            <div class="form-group">
+                                <label for="nombreTipo">Nombre de tipo:</label>
+                                <select id="nombreTipo">
+                                    <option value="salario">Salario</option>
+                                    <option value="factura">Factura</option>
+                                    <option value="comida">Comida</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcion">Descripción:</label>
+                                <input type="text" id="descripcion">
+                            </div>
+                            <div class="form-group">
+                                <label for="tipo">Tipo:</label>
+                                <select id="tipo">
+                                    <option value="Ingreso">Ingreso</option>
+                                    <option value="Egreso">Egreso</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="categoria">Categoría:</label>
+                                <input type="text" id="categoria">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form-right">
+                        <button type="button" id="guardarBtn" class="btn">Guardar</button>
+                        <button type="button" id="consultarBtn" class="btn">Consultar</button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Codigo</th>
+                                <th>Nombre de tipo</th>
+                                <th>Descripción</th>
+                                <th>Tipo</th>
+                                <th>Categoría</th>
+                                <th>Ejecuciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="entriesTable">
+                            <!-- Las filas se agregarán aquí dinámicamente -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright © 2024 Aventia-software company</p>
+        </footer>
+    </div>
+    <script src="../JS/app.js"></script>
+</body>
+</html>

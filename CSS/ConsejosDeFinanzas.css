@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header.header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.text-encabezado {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.main-container {
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 80%;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    max-width: 95%;
+    padding: 20px;
+    background-color: #20c997;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.carousel-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+}
+
+.left-button {
+    position: absolute;
+    left: 0;
+}
+
+.right-button {
+    position: absolute;
+    right: 0;
+}
+
+.carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #333;
+}
+
+/* Estilos del footer */
+footer.footer {
+    background-color: #20c997;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+}
+.text-encabezado {
+    text-align: left;
+    margin-right: 790px;
+    color: rgb(20 184 166);
+    margin-top: 0;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../CSS/Styles.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col justify-between">
+        <header class="flex justify-between items-center p-4 border-b border-zinc-300">
+            <a href="./Inicio.html"><img src="../RECURSOS/logo.png" alt="Logo" class="h-12" style="margin-left: 150px;"></a>
+            <p class="text-encabezado">
+                <b>Con tu dinero en orden y nuestro sistema<br> en mano, juntos trazaremos un camino<br>financiero sano</b>
+            </p>
+        </header>
+        <main class="flex-grow flex flex-col items-center justify-center">
+            <h1>Bienvenido, <span id="username"></span></h1>
+            <div id="user-data"></div>
+            <a href="./gestionIngresoEgreso.html"><button class="btn"><b>Tipos de ingresos y egresos</b></button></a>
+            <div>
+                <img class="img" src="../RECURSOS/inicio.png" alt="">
+            </div>
+        </main>
+        <footer class="bg-green-400 text-center p-4">
+            <p class="text-white">Copyright © 2024 Aventia-software company</p>
+        </footer>
+    </div>
+    <script src="../JS/Inicio.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/gestioncuentas.css">
+    <title>Gestión Cuenta Bancaria - Aventia Software Company</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="/HTML/option.html"><img src="../RECURSOS/logo.png" alt="Logo" class="logo"></a>
+            <p class="text-encabezado"><b>
+                Con tu dinero en orden y nuestro sistema<br>en mano, juntos trazaremos un camino<br>financiero sano</b>
+            </p>
+        </div>
+    </header>
+    <main class="main-container">
+        <h2 class="title">Gestión Cuenta Bancaria</h2>
+        <div class="flex-container">
+            <div class="form-container">
+                <form id="accountForm">
+                    <div class="form-group">
+                        <label for="numeroCuenta">Número de cuenta:</label>
+                        <input type="text" id="numeroCuenta">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombreBanco">Nombre del banco:</label>
+                        <select id="nombreBanco">
+                            <option value="Nequi">Nequi</option>
+                            <option value="BBVA">BBVA</option>
+                            <option value="Davi Plata">Davi Plata</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipoCuenta">Tipo de cuenta:</label>
+                        <select id="tipoCuenta">
+                            <option value="Corriente">Corriente</option>
+                            <option value="Ahorros">Ahorros</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="saldoActual">Saldo actual:</label>
+                        <input type="text" id="saldoActual">
+                    </div>
+                    <div class="form-group">
+                        <label for="estadoCuenta">Estado de la cuenta:</label>
+                        <select id="estadoCuenta">
+                            <option value="Activa">Activa</option>
+                            <option value="Inactiva">Inactiva</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaApertura">Fecha de apertura:</label>
+                        <input type="date" id="fechaApertura">
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripción:</label>
+                        <input type="text" id="descripcion">
+                    </div>
+                    <div class="button-group">
+                        <button type="button" id="guardarBtn" class="btn">Guardar</button>
+                        <button type="button" id="consultarBtn" class="btn">Consultar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Número De Cuenta</th>
+                            <th>Nombre Del Banco</th>
+                            <th>Tipo De Cuenta</th>
+                            <th>Saldo Actual</th>
+                            <th>Estado De La Cuenta</th>
+                            <th>Fecha De Apertura</th>
+                            <th>Descripción Opcional</th>
+                            <th>Ejecuciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="accountsTable">
+                        <!-- Las filas se agregarán aquí dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Copyright © 2024 Aventia-software company</p>
+    </footer>
+    <script src="../JS/gestion.js"></script>
+</body>
+</html>

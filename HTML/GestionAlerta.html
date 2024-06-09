@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/GestionAlerta.css">
+    <title>Gestión de Alertas - Aventia Software Company</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="/HTML/option.html"><img src="../RECURSOS/logo.png" alt="Logo" class="logo"></a>
+            <p class="text-encabezado"><b>
+                Con tu dinero en orden y nuestro sistema<br>en mano, juntos trazaremos un camino<br>financiero sano</b>
+            </p>
+        </div>
+    </header>
+    <main class="main-container">
+        <h2 class="title">Gestión De Alertas</h2>
+        <div class="flex-container">
+            <div class="form-container">
+                <form id="alertForm">
+                    <div class="form-group">
+                        <label for="tipoAlerta">Tipo de alerta:</label>
+                        <input type="text" id="tipoAlerta">
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionAlerta">Descripción de la alerta:</label>
+                        <input type="text" id="descripcionAlerta">
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaHoraAlerta">Fecha y hora de la alerta:</label>
+                        <input type="datetime-local" id="fechaHoraAlerta">
+                    </div>
+                    <div class="form-group">
+                        <label for="opcionesRepeticion">Opciones de repetición:</label>
+                        <select id="opcionesRepeticion">
+                            <option value="Diariamente">Diariamente</option>
+                            <option value="Semanalmente">Semanalmente</option>
+                            <option value="Mensualmente">Mensualmente</option>
+                            <option value="Una vez">Una vez</option>
+                        </select>
+                    </div>
+                    <div class="button-group">
+                        <button type="button" id="consultarBtn" class="btn">Consultar</button>
+                        <button type="button" id="guardarBtn" class="btn">Guardar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="table-container" id="tableContainer" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tipo De Alerta</th>
+                            <th>Descripción De La Alerta</th>
+                            <th>Fecha Y Hora De La Alerta</th>
+                            <th>Opciones De Repetición</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="alertsTable">
+                        <!-- Las filas se agregarán aquí dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Copyright © 2024 Aventia-software company</p>
+    </footer>
+    <script src="../JS/alertas.js"></script>
+</body>
+</html>

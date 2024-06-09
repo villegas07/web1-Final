@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/HistorialTransacciones.css">
+    <title>Historial de Transacciones - Aventia Software Company</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="./option.html"><img src="../RECURSOS/logo.png" alt="Logo" class="logo"></a>
+            <p class="text-encabezado"><b>
+                Con tu dinero en orden y nuestro sistema<br> en mano, juntos trazaremos un camino<br>financiero sano</b>
+            </p>
+        </div>
+    </header>
+    <main class="main-container">
+        <h2 class="title">Historial de Transacciones</h2>
+        <div class="filter-container">
+            <label for="mesFiltro">Mes:</label>
+            <select id="mesFiltro">
+                <option value="">Todos</option>
+                <!-- Opciones de meses -->
+                <option value="01">Enero</option>
+                <option value="02">Febrero</option>
+                <option value="03">Marzo</option>
+                <option value="04">Abril</option>
+                <option value="05">Mayo</option>
+                <option value="06">Junio</option>
+                <option value="07">Julio</option>
+                <option value="08">Agosto</option>
+                <option value="09">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>
+
+            <label for="tipoTransaccionFiltro">Tipo de transacción:</label>
+            <select id="tipoTransaccionFiltro">
+                <option value="">Todos</option>
+                <option value="Ingreso">Ingreso</option>
+                <option value="Egreso">Egreso</option>
+            </select>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Mes</th>
+                        <th>Tipo de Transacción</th>
+                        <th>Tipo de Ingreso o Egreso Asociado</th>
+                        <th>Valor</th>
+                        <th>Cuenta Bancaria Relacionada</th>
+                        <th>Descripción Opcional</th>
+                    </tr>
+                </thead>
+                <tbody id="historialTable">
+                    <!-- Las filas se agregarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Copyright © 2024 Aventia-software company</p>
+    </footer>
+    <script src="../JS/HistorialTransacciones.js"></script>
+</body>
+</html>

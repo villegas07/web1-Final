@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col justify-between">
+        <header class="flex justify-between items-center p-4 border-b border-zinc-300">
+            <img src="RECURSOS/logo.png" alt="Logo" class="h-12" style="margin-left: 150px;">
+            <p class="text-encabezado">
+                <b>Con tu dinero en orden y nuestro sistema<br> en mano, juntos trazaremos un camino<br>financiero sano</b>
+            </p>
+        </header>
+        <main class="flex-grow flex flex-col items-center justify-center">
+            <div style="border: none;">
+                <h1 class="text-2xl font-semibold text-center text-teal-700 mb-4">INICIAR SESIÓN</h1>
+                <p class="text-center text-zinc-600 mb-6"><b style="color: rgb(20 184 166);">Inicia sesión con su usuario y contraseña</b></p>
+                <form id="loginForm">
+                    <div class="mb-4">
+                        <input type="text" id="username" placeholder="Usuario" class="w-full p-3 border border-zinc-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500" style="width: 350px;" required>
+                    </div>
+                    <div class="mb-6">
+                        <input type="password" id="password" placeholder="Contraseña" class="w-full p-3 border border-zinc-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+                    </div>
+                    <button style="border-radius: 25px;" type="submit" class="w-full bg-teal-500 text-white p-3 rounded-lg hover:bg-teal-600">INICIAR SESIÓN</button>
+                </form>
+            </div>
+        </main>
+        <footer class="bg-green-400 text-center p-4">
+            <p class="text-white">Copyright © 2024 Aventia-software company</p>
+        </footer>
+    </div>
+    <script src="JS/login.js"></script>
+</body>
+</html>

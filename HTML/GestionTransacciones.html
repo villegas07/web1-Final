@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/transaccionesEI.css">
+    <title>Gestión de Transacciones - Aventia Software Company</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="/HTML/option.html"><img src="../RECURSOS/logo.png" alt="Logo" class="logo"></a>
+            <p class="text-encabezado"><b>
+                Con tu dinero en orden y nuestro sistema<br>en mano, juntos trazaremos un camino<br>financiero sano</b>
+            </p>
+        </div>
+    </header>
+    <main class="main-container">
+        <h2 class="title">Gestión de transacciones a nivel de ingresos y egresos</h2>
+        <div class="form-container">
+            <form id="transactionForm">
+                <div class="form-group">
+                    <label for="tipoTransaccion">Tipo de transacción:</label>
+                    <select id="tipoTransaccion">
+                        <option value="Ingreso">Ingreso</option>
+                        <option value="Egreso">Egreso</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tipoIngresoEgreso">Tipo de ingreso o egreso asociado:</label>
+                    <select id="tipoIngresoEgreso">
+                        <option value="Salario">Salario</option>
+                        <option value="Factura">Factura</option>
+                        <option value="Comida">Comida</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="valorTransaccion">Valor de la transacción:</label>
+                    <input type="text" id="valorTransaccion">
+                </div>
+                <div class="form-group">
+                    <label for="cuentaBancaria">Cuenta bancaria:</label>
+                    <input type="text" id="cuentaBancaria">
+                </div>
+                <div class="form-group">
+                    <label for="fechaTransaccion">Fecha de transacción:</label>
+                    <input type="date" id="fechaTransaccion">
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción opcional:</label>
+                    <input type="text" id="descripcion">
+                </div>
+                <div class="form-group">
+                    <label for="adjuntar">Adjuntar:</label>
+                    <input type="file" id="adjuntar">
+                </div>
+                <div class="button-group">
+                    <button type="button" id="guardarBtn" class="btn">Guardar</button>
+                    <button type="button" id="actualizarBtn" class="btn">Actualizar</button>
+                    <button type="button" id="consultarBtn" class="btn">Consultar</button>
+                    <button type="button" id="eliminarBtn" class="btn">Eliminar</button>
+                </div>
+            </form>
+        </div>
+        <div class="table-container" id="tableContainer" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de transacción</th>
+                        <th>Tipo de ingreso o egreso asociado</th>
+                        <th>Valor de la transacción</th>
+                        <th>Cuenta bancaria</th>
+                        <th>Fecha de transacción</th>
+                        <th>Descripción opcional</th>
+                        <th>Archivo adjunto</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionsTable">
+                    <!-- Las filas se agregarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Copyright © 2024 Aventia-software company</p>
+    </footer>
+    <script src="../JS/TransaccionesEI.js"></script>
+</body>
+</html>

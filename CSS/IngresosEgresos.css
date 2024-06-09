@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+    margin-left: 150px;
+}
+
+.header-text {
+    text-align: center;
+    margin-right: 150px;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-wrapper {
+    width: 80%;
+    max-width: 800px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group label {
+    min-width: 100px;
+    font-weight: bold;
+    color: #4a5568;
+}
+
+.form-group input,
+.form-group select {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+    margin-right: 180px;
+}
+
+#guardarBtn {
+    background-color: #38a169;
+}
+
+#consultarBtn {
+    background-color: #718096;
+}
+
+.table-container {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #cbd5e0;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #38a169;
+    color: #ffffff;
+}
+
+table td button {
+    margin-right: 5px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+table td .bg-green-500 {
+    background-color: #38a169;
+}
+
+table td .bg-red-500 {
+    background-color: #e53e3e;
+}
+
+footer {
+    background-color: #38a169;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.text-encabezado{
+    text-align: left;
+    margin-right: 790px;
+    color: rgb(20 184 166 );
+    margin-top: 0;
+}
+.img{
+    margin-right: 5px;
+    height: 60px;
+    width: 160px;
+    margin-left: 80px;
+}
+.title{
+    text-align: center;
+    color: rgb(20 184 166 );
+}
