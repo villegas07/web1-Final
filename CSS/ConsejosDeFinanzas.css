@@ -123,3 +123,9 @@ footer.footer {
     color: rgb(20 184 166);
     margin-top: 0;
 }
+li{
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
